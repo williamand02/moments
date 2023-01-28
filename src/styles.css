@@ -1,6 +1,7 @@
 :root {
   --gold: #dec129;
   --grey: #444444;
+  --grey2: #777777;
   --grey-light: #efefef;
 }
 
@@ -24,4 +25,46 @@ a:hover {
 
 ul {
   list-style: none;
+}
+
+
+/* FORM */
+
+form {
+  width: 450px;
+  margin: 0 auto;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+}
+
+.form-group label{
+  font-weight: bold;
+  font-size: .9em;
+  margin-bottom: .4em;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: .6em;
+  color: var(--grey2);
+  font-size: 0.8em;
+}
+
+input[type="submit"] {
+  background-color: var(--grey-light);
+  border: 2px solid transparent;
+  padding: .6em 1em;
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: .4s;
+}
+input[type="submit"]:hover {
+  color: var(--gold);
+  border-color: var(--gold);
+  background-color: transparent;
 }
