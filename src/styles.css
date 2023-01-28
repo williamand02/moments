@@ -1,6 +1,7 @@
 :root {
   --gold: #dec129;
-  --grey: #444444
+  --grey: #444444;
+  --grey-light: #efefef;
 }
 
 * {
