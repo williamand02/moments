@@ -3,6 +3,7 @@
   --grey: #444444;
   --grey2: #777777;
   --grey-light: #efefef;
+  --alert: #DC3545;
 }
 
 * {
@@ -41,7 +42,7 @@ form {
   margin-bottom: 1em;
 }
 
-.form-group label{
+.form-group label {
   font-weight: bold;
   font-size: .9em;
   margin-bottom: .4em;
@@ -63,8 +64,16 @@ input[type="submit"] {
   cursor: pointer;
   transition: .4s;
 }
+
 input[type="submit"]:hover {
   color: var(--gold);
   border-color: var(--gold);
   background-color: transparent;
+}
+
+.validation-error p {
+  color: var(--alert);
+  margin-top: .4em;
+  border-left: 3px solid var(--alert);
+  padding-left: .2em;
 }
