@@ -4,6 +4,8 @@
   --grey2: #777777;
   --grey-light: #efefef;
   --alert: #DC3545;
+  --blue: #007bff;
+  --white: #ffffff
 }
 
 * {
@@ -76,4 +78,46 @@ input[type="submit"]:hover {
   margin-top: .4em;
   border-left: 3px solid var(--alert);
   padding-left: .2em;
+}
+
+/* BUTTONS */
+
+.edit-btn,
+.remove-btn {
+  border: 1px solid var(--grey-light);
+  padding: 0.4em 1em;
+  font-size: 1em;
+  margin: 0 0.5em;
+  cursor: pointer;
+  background-color: var(--white);
+  transition: 0.4s;
+}
+
+button fa-icon,
+a fa-icon {
+  margin-right: 0.2em;
+}
+
+.edit-btn,
+.edit-btn path {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.edit-btn:hover,
+.edit-btn:hover path {
+  color: var(--white);
+  background-color: var(--blue);
+}
+
+.remove-btn,
+.remove-btn path {
+  border-color: var(--alert);
+  color: var(--alert);
+}
+
+.remove-btn:hover,
+.remove-btn:hover path {
+  color: var(--white);
+  background-color: var(--alert);
 }
